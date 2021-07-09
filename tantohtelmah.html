@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .design{
+        background-color: darksalmon;
+        color: black;
+        text-align: center;
+}
+</style>
+
+<body class = "design">
+    <form >
+        <input type="text" id="input_id" value="Name"><br>
+        <input type="button" value="display" onclick="wawa()" />
+        <div id="alert" style="color: blue"></div>
+      </form>
+    <script>
+       function wawa() {
+  let x = document.getElementById('input_id').value;
+  document.getElementById('alert').innerHTML = 'The user input is: ' + x;
+}
+    </script>
+</body>
+</html>
